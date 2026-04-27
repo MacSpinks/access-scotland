@@ -232,21 +232,12 @@ function App() {
               </article>
 
               <aside className="founders-panel">
-                <div>
-                  <p className="section-eyebrow">Founders</p>
-                  <h3>People to contact and the roles they hold.</h3>
-                </div>
-
                 <div className="founders-grid">
                   {founders.map((founder) => (
                     <article key={founder.email} className="founder-card">
                       <img src={founder.image} alt={founder.name} />
-
-                      <div>
-                        <p className="founder-card__role">{founder.role}</p>
-                        <h3>{founder.name}</h3>
-                        <a href={`mailto:${founder.email}`}>{founder.email}</a>
-                      </div>
+                      <h3>{founder.name}</h3>
+                      <a href={`mailto:${founder.email}`}>{founder.email}</a>
                     </article>
                   ))}
                 </div>
