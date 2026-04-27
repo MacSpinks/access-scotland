@@ -1,16 +1,33 @@
-# React + Vite
+# Access Scotland
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React/Vite rebuild of the Access Scotland website, redesigned from the live Wix site into a mobile-first single-page experience.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Production build
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run build
+```
 
-## Expanding the ESLint configuration
+The production output is written to `dist/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Netlify
+
+This project is configured for an initial Netlify deploy with `netlify.toml`.
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node version: `22.12.0`
+
+## Current notes
+
+- The gallery is currently powered by static data in `src/siteData.js`.
+- `Second Mission Trip` still links to the live archive while that album import is unfinished.
+- The mailing list form is visual-only right now and still needs a real provider hookup before launch.
+- A future admin/photo-management flow can be layered in without rebuilding the front end structure.
