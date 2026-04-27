@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --content-width: 76rem;
+  --white: #f6f7f4;
+  --slate-950: #0f1d24;
+  --slate-900: #16303a;
+  --slate-800: #254652;
+  --moss-700: #4f675e;
+  --mist-300: #cfdadc;
+  --surface: #f3f5f2;
+  --surface-strong: rgba(255, 255, 255, 0.74);
+  --line: rgba(20, 35, 43, 0.1);
+  --accent: #b89263;
+  --accent-soft: #d7bf96;
+  --text-strong: #14232b;
+  --text-body: #31464f;
+  --text-muted: #687b82;
+  --shadow-soft: 0 22px 48px rgba(16, 33, 41, 0.1);
+
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-body);
+  background:
+    radial-gradient(circle at top left, rgba(207, 218, 220, 0.72), transparent 24rem),
+    radial-gradient(circle at top right, rgba(104, 132, 124, 0.16), transparent 22rem),
+    linear-gradient(180deg, #eef3f3, #f6f4ef 48%, #eef2ef 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  background: transparent;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Manrope', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button,
+input {
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(184, 146, 99, 0.78);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+}
+
+h1 {
+  font-size: clamp(2.9rem, 11vw, 6.2rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.35rem);
+}
+
+h3 {
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+p {
+  margin: 0;
+}
