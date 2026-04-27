@@ -477,8 +477,9 @@
 .founder-card img {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: 1rem;
 }
 
