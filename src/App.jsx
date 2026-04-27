@@ -235,8 +235,17 @@ function App() {
                 <div className="founders-grid">
                   {founders.map((founder) => (
                     <article key={founder.email} className="founder-card">
-                      <img src={founder.image} alt={founder.name} />
+                      <img
+                        src={founder.image}
+                        alt={founder.name}
+                        style={
+                          founder.imagePosition
+                            ? { objectPosition: founder.imagePosition }
+                            : undefined
+                        }
+                      />
                       <h3>{founder.name}</h3>
+                      <p className="founder-card__title">{founder.role}</p>
                       <a href={`mailto:${founder.email}`}>{founder.email}</a>
                     </article>
                   ))}

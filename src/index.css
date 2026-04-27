@@ -41,12 +41,14 @@
 
 html {
   scroll-padding-top: 6rem;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   min-width: 20rem;
   background: transparent;
+  overflow-x: clip;
 }
 
 body,
@@ -79,6 +81,7 @@ input:focus-visible {
 
 #root {
   min-height: 100svh;
+  overflow-x: clip;
 }
 
 h1,

@@ -49,17 +49,18 @@ export const aboutContent = {
 export const founders = [
   {
     name: 'Jonathan Lindsey',
-    role: 'Operations Lead',
+    role: 'President',
     email: 'jonathan@accessscotland.com',
     image:
       'https://static.wixstatic.com/media/2bcc6e_edcf77136b4048238bb188c9917f0921~mv2.jpeg/v1/crop/x_0,y_783,w_3024,h_3133/fill/w_686,h_712,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_7275.jpeg',
+    imagePosition: 'center 18%',
   },
   {
-    name: 'Mallory Champney',
-    role: 'Stateside Liaison',
-    email: 'mallory@accessscotland.com',
-    image:
-      'https://static.wixstatic.com/media/2bcc6e_69c781111f0a4230aa7c89a47dfa1baf~mv2.jpeg/v1/fill/w_710,h_710,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2bcc6e_69c781111f0a4230aa7c89a47dfa1baf~mv2.jpeg',
+    name: 'Tony Brock',
+    role: 'Director',
+    email: 'tony@accessscotland.com',
+    image: '/tony-brock.jpg',
+    imagePosition: 'center 12%',
   },
 ]
 
